@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard Warga</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="container">
+
+
+  <div class="sidebar">
+    <h2>WARGA</h2>
+    <a href="#">Kirim Laporan</a>
+    <a href="#" onclick="logout()">Logout</a>
+  </div>
+
+ 
+  <div class="main">
+    <h2>Dashboard Warga</h2>
+
+    <div class="card">
+      <h3>Kirim Laporan Kerusakan</h3>
+
+      <select id="kategori">
+        <option value="1">Jalan Rusak</option>
+        <option value="2">Saluran Air</option>
+        <option value="3">Sampah Berserakan</option>
+      </select>
+
+      <input id="lokasi" type="text" placeholder="Lokasi kejadian">
+
+      <textarea id="deskripsi" placeholder="Deskripsi kerusakan"></textarea>
+
+      <button type="button" onclick="kirimLaporan()">Kirim Laporan</button>
+    </div>
+  </div>
+
+</div>
+
+<script src="js/app.js"></script>
+</body>
+</html>
